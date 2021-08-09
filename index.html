@@ -12,13 +12,16 @@
   <link rel="stylesheet" href="./acess/Roboto/Roboto-Regular.ttf">
   <link rel="stylesheet" href="./acess/css/base.css">
   <link rel="stylesheet" href="./acess/css/main.css">
+  <link rel="stylesheet" href="./acess/css/grid.css">
+  <link rel="stylesheet" href="./acess/css/responsive.css">
+
   <link rel="stylesheet" href="./acess/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
 </head>
 <body>
   <div class="shop">
     <header class="header">
-      <div class="grid">
-        <nav class="header__navbar">
+      <div class="grid wide">
+        <nav class="header__navbar hide-on-mobi-tab">
           <ul class="header__navbar-list">
             <li class="header__navbar-item header__navbar-item--qr header__navbar-item--separate">
               Vào cửa hàng trên ứng dụng shop-ngoc
@@ -127,6 +130,11 @@
         </nav>
         <!-- width search -->
         <div class="header-width-search">
+          <label for="mobile-search__checkbox" class="header__mobile-search">
+            <i class="header__mobile-search-icon fas fa-bars"></i>
+            <i class="header__mobile-search-icon fas fa-search"></i>
+          </label>
+
           <div class="header__logo">
             <a href="/" class="header__logo-link">
               <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -137,7 +145,7 @@
               </svg>
             </a>
           </div>
-          <div class="header__search">
+          <div class="header__search hide-on-mobile">
             <div class="header__search-input-wrap">
               <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
               <div class="header__search-history">
@@ -175,150 +183,215 @@
               <i class="header__search-btn-icon fas fa-search"></i>
             </button>
           </div>
-          <div class="header__cart">
-            <div class="header__cart-wrap">
-              <i class="header__cart-icon fas fa-shopping-cart"></i>
-              <span class="header__cart-notice">3</span>
-              <!-- no cart: header__cart-list--no-cart-->
-              <!-- cart: header__cart-list--cart -->
-              <div class="header__cart-list header__cart-list--cart ">
-                <img src="./acess/img/empty-cart.png" alt="" class="header__cart--no-cart-img">
-                <span class="header__cart-list--no-cart-msg">Chưa có sản phẩm</span>
-                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
-                <!-- cart -->
-                <ul class="header__cart-list-item">
-                  <li class="header__cart-item">
-                    <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
-                    <div class="header__cart-item-info">
-                      <div class="header__cart-item-head">
-                        <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt kem đặt trị vùng mắt Bộ kem đặt trị vùng mắt</h5>
-                        <div class="header__cart-item-wrap">
-                          <span class="header__cart-item-price">2.000.000đ</span>
-                          <span class="header__cart-item-multiply">x</span>
-                          <span class="header__cart-item-qnt">2</span>
-                        </div>
-                      </div>
-                      <div class="header__cart-item-body">
-                        <span class="header__cart-item-description">Phân loại: Bạc</span>
-                        <span class="header__cart-item-remove">Xóa</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-item">
-                    <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
-                    <div class="header__cart-item-info">
-                      <div class="header__cart-item-head">
-                        <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
-                        <div class="header__cart-item-wrap">
-                          <span class="header__cart-item-price">2.000.000đ</span>
-                          <span class="header__cart-item-multiply">x</span>
-                          <span class="header__cart-item-qnt">2</span>
-                        </div>
-                      </div>
-                      <div class="header__cart-item-body">
-                        <span class="header__cart-item-description">Phân loại: Bạc</span>
-                        <span class="header__cart-item-remove">Xóa</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-item">
-                    <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
-                    <div class="header__cart-item-info">
-                      <div class="header__cart-item-head">
-                        <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
-                        <div class="header__cart-item-wrap">
-                          <span class="header__cart-item-price">2.000.000đ</span>
-                          <span class="header__cart-item-multiply">x</span>
-                          <span class="header__cart-item-qnt">2</span>
-                        </div>
-                      </div>
-                      <div class="header__cart-item-body">
-                        <span class="header__cart-item-description">Phân loại: Bạc</span>
-                        <span class="header__cart-item-remove">Xóa</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-item">
-                    <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
-                    <div class="header__cart-item-info">
-                      <div class="header__cart-item-head">
-                        <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
-                        <div class="header__cart-item-wrap">
-                          <span class="header__cart-item-price">2.000.000đ</span>
-                          <span class="header__cart-item-multiply">x</span>
-                          <span class="header__cart-item-qnt">2</span>
-                        </div>
-                      </div>
-                      <div class="header__cart-item-body">
-                        <span class="header__cart-item-description">Phân loại: Bạc</span>
-                        <span class="header__cart-item-remove">Xóa</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-item">
-                    <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
-                    <div class="header__cart-item-info">
-                      <div class="header__cart-item-head">
-                        <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
-                        <div class="header__cart-item-wrap">
-                          <span class="header__cart-item-price">2.000.000đ</span>
-                          <span class="header__cart-item-multiply">x</span>
-                          <span class="header__cart-item-qnt">2</span>
-                        </div>
-                      </div>
-                      <div class="header__cart-item-body">
-                        <span class="header__cart-item-description">Phân loại: Bạc</span>
-                        <span class="header__cart-item-remove">Xóa</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-item">
-                    <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
-                    <div class="header__cart-item-info">
-                      <div class="header__cart-item-head">
-                        <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
-                        <div class="header__cart-item-wrap">
-                          <span class="header__cart-item-price">2.000.000đ</span>
-                          <span class="header__cart-item-multiply">x</span>
-                          <span class="header__cart-item-qnt">2</span>
-                        </div>
-                      </div>
-                      <div class="header__cart-item-body">
-                        <span class="header__cart-item-description">Phân loại: Bạc</span>
-                        <span class="header__cart-item-remove">Xóa</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-item">
-                    <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
-                    <div class="header__cart-item-info">
-                      <div class="header__cart-item-head">
-                        <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
-                        <div class="header__cart-item-wrap">
-                          <span class="header__cart-item-price">2.000.000đ</span>
-                          <span class="header__cart-item-multiply">x</span>
-                          <span class="header__cart-item-qnt">2</span>
-                        </div>
-                      </div>
-                      <div class="header__cart-item-body">
-                        <span class="header__cart-item-description">Phân loại: Bạc</span>
-                        <span class="header__cart-item-remove">Xóa</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <a href="" class="header__cart-view btn btn--primary">Xem giỏ hàng</a>
+
+            <div class="header__cart">
+              <div class="header__cart-wrap">
+                <label for="mobile__cart-check" class="mobile__cart">
+                  <i class="header__cart-icon fas fa-shopping-cart"></i>
+                </label>
+                <span class="header__cart-notice">3</span>
               </div>
+                <!-- no cart: header__cart-list--no-cart-->
+                <!-- cart: header__cart-list--cart -->
+                <input type="checkbox" hidden name="" id="mobile__cart-check" class="header__cart-check">
+                <span class="header__cart-list header__cart-list--cart ">
+                  <img src="./acess/img/empty-cart.png" alt="" class="header__cart--no-cart-img">
+                  <span class="header__cart-list--no-cart-msg">Chưa có sản phẩm</span>
+                  <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                  <!-- cart -->
+                  <ul class="header__cart-list-item">
+                    <li class="header__cart-item">
+                      <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt kem đặt trị vùng mắt Bộ kem đặt trị vùng mắt</h5>
+                          <div class="header__cart-item-wrap">
+                            <span class="header__cart-item-price">2.000.000đ</span>
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">Phân loại: Bạc</span>
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__cart-item">
+                      <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
+                          <div class="header__cart-item-wrap">
+                            <span class="header__cart-item-price">2.000.000đ</span>
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">Phân loại: Bạc</span>
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__cart-item">
+                      <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
+                          <div class="header__cart-item-wrap">
+                            <span class="header__cart-item-price">2.000.000đ</span>
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">Phân loại: Bạc</span>
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__cart-item">
+                      <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
+                          <div class="header__cart-item-wrap">
+                            <span class="header__cart-item-price">2.000.000đ</span>
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">Phân loại: Bạc</span>
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__cart-item">
+                      <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
+                          <div class="header__cart-item-wrap">
+                            <span class="header__cart-item-price">2.000.000đ</span>
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">Phân loại: Bạc</span>
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__cart-item">
+                      <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
+                          <div class="header__cart-item-wrap">
+                            <span class="header__cart-item-price">2.000.000đ</span>
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">Phân loại: Bạc</span>
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__cart-item">
+                      <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg" alt="" class="header__cart-img">
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mắt</h5>
+                          <div class="header__cart-item-wrap">
+                            <span class="header__cart-item-price">2.000.000đ</span>
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">Phân loại: Bạc</span>
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <a href="" class="header__cart-view btn btn--primary">Xem giỏ hàng</a>
+                </span>
+
             </div>
-          </div>
         </div>
       </div>
-
     </header>
+    <div class="grid wide">
+      <div class="row--ang">
+        <ul class="header__sort-bar">
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Liên quan</a>
+          </li>
+          <li class="header__sort-item header__sort-item--active">
+            <a href="" class="header__sort-link">Mới nhất</a>
+          </li>
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Bán chạy</a>
+          </li>
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link">Giá
+              <i class="header__sort-icon-down fas fa-angle-down"></i>
+              <i class="header__sort-icon-up fas fa-angle-up"></i>
+
+            </a>
+          </li>
+        </ul>
+      </div>
+      <input type="checkbox" hidden id="mobile-search__checkbox" class="header__search-checkbox">
+      <span class="header__search-mobile">
+        <div class="header__search-input-wrap">
+          <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+          <div class="header__search-history">
+            <div class="header__search-history-heading">
+              Lịch sử tìm kiếm
+            </div>
+            <ul class="header__search-history-list">
+              <li class="header__search-history-item">
+                <a href="">Kem dưỡng da</a>
+              </li>
+              <li class="header__search-history-item">
+                <a href="">Kem trị mụn</a>
+              </li>
+              <li class="header__search-history-item">
+                <a href="">kem trị thâm</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__search-select">
+          <span class="header__search-select-label">Trong Shop</span>
+          <i class="icon-chevron__down fas fa-chevron-down"></i>
+          <ul class="header__search-option">
+            <li class="header__search-option-item header__search-option-item-icon">
+              <span>Trong Shop</span>
+              <i class="fas fa-check"></i>
+            </li>
+            <li class="header__search-option-item">
+              <span>Ngoài Shop</span>
+              <i class="fas fa-check"></i>
+            </li>
+          </ul>
+        </div>
+        <button class="header__search-btn">
+          <i class="header__search-btn-icon fas fa-search"></i>
+        </button>
+      </span>
+    </div>
     <div class="app__container">
-      <div class="grid">
-        <div class="grid__row app__content">
-          <div class="grid__column-2">
+      <div class="grid wide">
+        <div class="row sm-gutter app__content">
+          <div class="col l-2 m-0 c-0">
             <nav class="category">
               <h3 class="category__heading">
                 <i class="category__heading-icon fas fa-list"></i>
@@ -338,8 +411,8 @@
             </nav>
           </div>
 
-          <div class="grid__column-10">
-            <div class="home-filter">
+          <div class="col l-10 m-12 c-12">
+            <div class="home-filter hide-on-mobi-tab">
               <span class="home-filter__label">Sắp xếp theo</span>
               <button class="home-filter__btn btn">Phổ biến</button>
               <button class="home-filter__btn btn btn--primary">Mới nhất</button>
@@ -373,10 +446,50 @@
                 </div>
               </div>
             </div>
+            <nav class="mobile-category">
+              <ul class="mobile-category__list">
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích Dụng cụ & thiết bị tiện ích</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                </li>
+              </ul>
+            </nav>
 
             <div class="home-product">
-              <div class="grid__row">
-                <div class="grid__column-2-4">
+              <div class="row sm-gutter">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -416,7 +529,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -456,7 +569,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -496,7 +609,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -536,7 +649,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -576,7 +689,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -616,7 +729,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -656,7 +769,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -696,7 +809,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -736,7 +849,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -776,7 +889,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -816,7 +929,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a href="#" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1551265411086-Q9AXEM82UFC3CM8ZNUEU/27072809_2107874492572797_5078792318071986073_n.jpg);"></div>
@@ -897,9 +1010,9 @@
       </div>
     </div>
     <footer class="footer">
-      <div class="grid">
-        <div class="grid__row">
-          <div class="grid__column-2-4">
+      <div class="grid wide">
+        <div class="row sm-gutter app__footer">
+          <div class="col l-2-4 m-4 c-6">
             <h3 class="footer__heading">Chăm sóc khách hàng</h3>
             <ul class="footer-list">
               <li class="footer-item">
@@ -914,12 +1027,12 @@
               </li>
               <li class="footer-item">
                 <a href="" class="footer-iem__link">
-                  Hướng dẫn mua hàng
+                  Hướng dẫn mua hàng trên Shop
                 </a>
               </li>
             </ul>
           </div>
-          <div class="grid__column-2-4">
+          <div class="col l-2-4 m-4 c-6">
             <h3 class="footer__heading">Giới thiệu</h3>
             <ul class="footer-list">
               <li class="footer-item">
@@ -939,7 +1052,7 @@
               </li>
             </ul>
           </div>
-          <div class="grid__column-2-4">
+          <div class="col l-2-4 m-4 c-6">
             <h3 class="footer__heading">Danh mục</h3>
             <ul class="footer-list">
               <li class="footer-item">
@@ -959,7 +1072,7 @@
               </li>
             </ul>
           </div>
-          <div class="grid__column-2-4">
+          <div class="col l-2-4 m-4 c-6">
             <h3 class="footer__heading">Theo dõi</h3>
             <ul class="footer-list">
               <li class="footer-item">
@@ -982,7 +1095,7 @@
               </li>
             </ul>
           </div>
-          <div class="grid__column-2-4">
+          <div class="col l-2-4 m-4 c-12">
             <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
             <div class="footer-download">
               <a href="" class="footer-download__link"><img src="./acess/img/qr_code.png" alt="" class="footer-download__qr"></a>
@@ -995,7 +1108,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="grid">
+        <div class="grid wide">
           <p class="footer-text">© 2021 - Bản quyền thuộc về Công ty TNHH Shop-ngoc</p>
         </div>
       </div>
