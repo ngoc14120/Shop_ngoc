@@ -4,6 +4,9 @@
   .hide-on-mobi-tab{
     display: none;
   }
+  .hide{
+    display: block;
+  }
   .header {
     position: fixed;
     top: 0;
@@ -85,6 +88,9 @@
   .header__mobile-search{
     display: flex;
   }
+  .header__search{
+    z-index: 11;
+  }
   .header__search-mobile{
     position: fixed;
     top: var(--header-height);
@@ -94,6 +100,9 @@
     padding: 0 8px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.08);
     animation: sidein linear .3s;
+  }
+  .header__search-checkbox:checked ~ .header__search-mobile{
+    display: flex;
   }
   @keyframes sidein{
     from{

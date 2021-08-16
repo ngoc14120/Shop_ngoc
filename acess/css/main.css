@@ -216,7 +216,7 @@
   animation: headernotifyGroth ease .3s;
   border-radius: 2px;
   display: none;
-  z-index: 2;
+  z-index: 3;
   will-change: opacity transform;
 }
 .header__notify::before{
@@ -454,20 +454,15 @@
   border-radius: 2px;
   display: flex;
   align-items: center;
-  z-index: 11;
 }
 .header__search-mobile{
   height: 40px;
   background-color: var(--while-color);
   flex:1;
   border-radius: 2px;
-  display: flex;
   align-items: center;
   z-index: 2;
   display: none;
-}
-.header__search-checkbox:checked ~ .header__search-mobile{
-  display: flex;
 }
 .header__search-input-wrap{
   flex: 1;
